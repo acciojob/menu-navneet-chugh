@@ -1,7 +1,13 @@
 h1 {
-    color: #27aedb;
+    /* color: #27aedb; */
     text-align: center;
     }
+
+.navbar .sub-menu{
+   display: flex;
+   justify-content: space-around;
+   color: tomato;
+}
     
 
 button{
@@ -9,4 +15,17 @@ button{
     text-align: center;
     justify-content: center;
     align-items: center;
+}
+
+.food-card{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    color: white;
+}
+
+.food-card-item{
+    background-color: rgb(20, 20, 19);
+    border: 1px solid green;
+    color: white
 }
