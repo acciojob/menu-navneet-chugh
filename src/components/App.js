@@ -1,22 +1,19 @@
-import React,{useState} from "react";
-import MenuDisplay from "./MenuDisplay";
-import Navbar from "./Navbar";
-
+import React from "react";
 import "../styles/App.css";
-
+import HeaderSection from "./HeaderSection";
+import NavigationSection from "./NavigationSection";
 
 
 
 
 const App = () => {
-  const [selected,setSelected] = useState("all");
-   console.log(selected); 
-  return(
-    <div>
-      <Navbar setSelected={setSelected}/>
-      <MenuDisplay selected={selected}/>
+  return (
+    <div className="App">
+        <HeaderSection/>
+        <NavigationSection/>
     </div>
-  )
-}
+  );
+};
+
 
 export default App;

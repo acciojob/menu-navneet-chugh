@@ -1,31 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Montserrat:wght@200&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.HeaderSection {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 h1 {
-    /* color: #27aedb; */
-    text-align: center;
-    }
+  color: #111111;
 
-.navbar .sub-menu{
-   display: flex;
-   justify-content: space-around;
-   color: tomato;
-}
-    
-
-button{
-    color: #27aedb;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+  padding-top: 12px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 3rem;
 }
 
-.food-card{
-    display: grid; 
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
-    color: white;
+.line {
+  margin-top: 5px;
+  background-color: orange;
+  height: 5px;
+  width: 91px;
 }
 
-.food-card-item{
-    background-color: rgb(20, 20, 19);
-    border: 1px solid green;
-    color: white
+.NavigationSection {
+  display: flex;
+  justify-content: center;
+  margin-top: 8vh;
+  gap: 4vw;
+}
+
+button {
+  font-family: "Inter", sans-serif;
+  font-size: 1.3rem;
+  padding: 4px;
+  font-weight: 600;
+  color: orange;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.CardSection {
+  margin-top: 15vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 7%;
+  margin-inline: 9vw;
+}
+
+.Card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2%;
+}
+
+.image-section > img {
+  height: 150px;
+  width: 150px;
+  border: 3px solid orange;
+}
+
+.details-section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4vh;
+}
+
+.item-title {
+  display: flex;
+  gap: 35%;
+
+  font-size: 17px;
+
+  font-family: "Inter", sans-serif;
+}
+
+.item-price{
+  color: orange;
+}
+
+.description{
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  word-wrap:break-word;
 }
